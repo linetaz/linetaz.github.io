@@ -11,7 +11,7 @@ let circleBirdsY;
 
 function preload() {
   riverSound = loadSound('assets/river.wav');
-  birdSound = loadSound('assets/metal.wav');
+  birdSound = loadSound('assets/birds.wav');
 }
 
 function setup() {
