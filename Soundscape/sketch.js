@@ -73,14 +73,14 @@ function draw() {
       musicSound.setVolume(volumeMusic);
 
 
-    if (metalSound.isPlaying() == false) {
+      if (metalSound.isPlaying() == false) {
       metalSound.play();
+      }
+      let distanceMetal = dist(mouseX, mouseY, squareMetalX, squareMetalY);
+      let volumeMetal = map(distanceMetal, 0, 200, 1, 0);
+      volumeMetal = constrain(volumeMetal, 0, 1);
+      metalSound.setVolume(volumeMetal);
     }
-    let distanceMetal = dist(mouseX, mouseY, squareMetalX, squareMetalY);
-    let volumeMetal = map(distanceMetal, 0, 200, 1, 0);
-    volumeMetal = constrain(volumeMetal, 0, 1);
-    metalSound.setVolume(volumeMetal);
-  }
 }
 
 function mouseClicked(){
