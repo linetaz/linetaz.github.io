@@ -1,70 +1,88 @@
 let userHasClicked = false;
 
 let riverSound;
-let birdSound;
+let musicSound;
+let metalSound;
 
 let circleRiverX;
 let circleRiverY;
 
-let circleBirdsX;
-let circleBirdsY;
+let circleMusicX;
+let circleMusicY;
 
-function preload() {
-  riverSound = loadSound('assets/river.wav');
-  birdSound = loadSound('assets/metal.wav');
+let squareMetalX;
+let squareMetalY;
+
+
+function preload(){
+  riverSound = loadSound("assets/river.wav");
+  musicSound = loadSound("assets/music.mp3");
+  metalSound = loadSound("assets/metal.wav");
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  textSize(46);
-  textFont('Courier New');
+  textSize(40);
   textAlign(CENTER);
   textStyle(BOLD);
-  
-  circleRiverX = random(width);
-  circleRiverY = random (height);
 
-  circleBirdsX = random(width);
-  circleBirdsY = random(height);
+  circleRiverX = random(width);
+  circleRiverY = random(height);
+
+  circleMusicX = random(width);
+  circleMusicY = random(height);
+
+  squareMetalX = random(width);
+  squareMetalY = random(height);
 }
+
 
 function draw() {
-  background('hotpink');
+  background("blue");
 
-  circle = (circleRiverX, circleRiverY, 80);
-  circle = (circleBirdsX, circleBirdsY, 80);
+  fill('orange');
+  circle(circleRiverX, circleRiverY, 100);
 
-  if (userHasClicked == false) {
-    text(
-      'Hi, please click to continue!',
-      width / 2,
-      height / 2
-    )
+  fill('yellow');
+  circle(circleMusicX, circleMusicY, 100);
+
+  fill('red')
+  rect(squareMetalX, squareMetalY, 100);
+
+  if (userHasClicked == false){
+    fill('black');
+    text("Hello, click to start", width/2, height/2);
   } else {
-    if (riverSound.isPlaying() == false) {
-      riverSound.play();
+
+      if(riverSound.isPlaying() == false){
+         riverSound.play();
+      }
+
+      let distanceRiver = dist(mouseX, mouseY, circleRiverX, circleRiverY);
+      let volumeRiver = map(distanceRiver, 0, 200, 1, 0);
+      volumeRiver = constrain(volumeRiver, 0, 1);
+      riverSound.setVolume(volumeRiver);
+
+
+      if (musicSound.isPlaying() == false) {
+      musicSound.play();
+      }
+      let distanceMusic = dist(mouseX, mouseY, circleMusicX, circleMusicY);
+      let volumeMusic = map(distanceMusic, 0, 200, 1, 0);
+      volumeMusic = constrain(volumeMusic, 0, 1);
+      musicSound.setVolume(volumeMusic);
+
+
+    if (metalSound.isPlaying() == false) {
+      metalSound.play();
     }
-
-    let distanceRiver = dist(mouseX, mouseY, circleRiverX, circleRiverY);
-    let volumeRiver = map(distancRiver, 0, 200, 1, 0);
-    volumeRiver = constrain(volumeRiver, 0, 1);
-    riverSound.setVolume(volumeRiver);
-
-
-
-  if (birdSound.isPlaying() == false) {
-      birdSound.play();
+    let distanceMetal = dist(mouseX, mouseY, squareMetalX, squareMetalY);
+    let volumeMetal = map(distanceMetal, 0, 200, 1, 0);
+    volumeMetal = constrain(volumeMetal, 0, 1);
+    metalSound.setVolume(volumeMetal);
   }
-  let distanceBirds = dist(mouseX, mouseY, circleBirdsX, circleBirdsY);
-  let volumeBirds = map(distanceBirds, 0, 200, 1, 0);
-  volumeBirds = constrain(volumeBirds, 0, 1);
-  birdSound.setVolume(volumeBirds);
 }
 
-
-}
-
-
-function mouseClicked() {
+function mouseClicked(){
   userHasClicked = true;
 }
