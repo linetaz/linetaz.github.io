@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 4906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ee9c9b;
+        opacity: .36;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: Marion-Italic, Marion;
+        font-size: 97.72px;
+        font-style: italic;
+      }
+
+      .cls-6 {
+        font-size: 59.95px;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #4d4e4e;
+        font-family: BodoniSvtyTwoSCITCTT-Book, 'Bodoni 72 Smallcaps';
+      }
+
+      .cls-8 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        font-size: 58.85px;
+      }
+
+      .cls-5 {
+        fill: #666667;
+        opacity: .18;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e4d2bc;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" y="40.97" width="1920" height="176.71"/>
+  <rect class="cls-2" x="1182.34" y="90.92" width="239.07" height="101.91"/>
+  <text class="cls-6" transform="translate(1226.96 158.59) scale(.87 1)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-6" transform="translate(1257.32 158.59) scale(.61 .7)"><tspan x="0" y="0">XPLORE</tspan></text>
+  <g>
+    <text class="cls-5" transform="translate(221.62 159.89) scale(.93 1)"><tspan x="0" y="0">L</tspan></text>
+    <text class="cls-5" transform="translate(269.53 159.89) scale(.65 .7)"><tspan x="0" y="0">INE</tspan><tspan class="cls-8" x="156.15" y="0">T</tspan><tspan x="202.57" y="0">A</tspan></text>
+    <text class="cls-5" transform="translate(438.03 159.89) scale(.93 1)"><tspan x="0" y="0" xml:space="preserve"> Z</tspan></text>
+    <text class="cls-5" transform="translate(504.11 159.89) scale(.65 .7)"><tspan x="0" y="0">IBERGA</tspan></text>
+    <text class="cls-4" transform="translate(226.45 159.89) scale(.93 1)"><tspan x="0" y="0">L</tspan></text>
+    <text class="cls-4" transform="translate(274.35 159.89) scale(.65 .7)"><tspan x="0" y="0">INE</tspan><tspan class="cls-8" x="156.15" y="0">T</tspan><tspan x="202.57" y="0">A</tspan></text>
+    <text class="cls-4" transform="translate(442.86 159.89) scale(.93 1)"><tspan x="0" y="0" xml:space="preserve"> Z</tspan></text>
+    <text class="cls-4" transform="translate(508.93 159.89) scale(.65 .7)"><tspan x="0" y="0">IBERGA</tspan></text>
+  </g>
+  <g>
+    <text class="cls-7" transform="translate(1530.07 158.8) scale(.87 1)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-7" transform="translate(1560.89 158.8) scale(.61 .7)"><tspan x="0" y="0">BOUT</tspan></text>
+    <text class="cls-7" transform="translate(1652.03 158.8) scale(.87 1)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-7" transform="translate(1661.55 158.8) scale(.61 .7)"><tspan x="0" y="0">ME</tspan></text>
+  </g>
+  <rect class="cls-1" x="46" y="1" width="161.5" height="4903"/>
+</svg>
