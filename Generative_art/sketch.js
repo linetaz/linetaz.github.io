@@ -1,4 +1,4 @@
-let cracks = [];
+let sticks= [];
 let walkers = [];
 
 
@@ -6,18 +6,19 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(135, 206, 235);
   frameRate(30);
+  saveCanvas
 
 }
 
 
 function draw() {
   for (let i = 0; i < 1; i++) {
-    cracks.push(new Crack(random(width), random(height)));
+    sticks.push(new Stick(random(width), random(height)));
   }
 
-  for (let crack of cracks) {
-    crack.move();
-    crack.display();
+  for (let stick of sticks) {
+    stick.move();
+    stick.display();
   }
 
 
@@ -34,7 +35,7 @@ function draw() {
 
 
 
-class Crack {
+class Stick {
   constructor(x, y) {
     this.start = createVector(x, y); // Starting point of the crack
     this.end = createVector(x + random(-100, 100), y + random(-100, 300));
@@ -64,18 +65,15 @@ class Walker {
   }
 
   generateRandomGreenColor() {
-    // Define your specific hue range for greens (e.g., 90-150)
     let minHue = 50;
     let maxHue = 160;
 
-    // Generate a random hue within the specified range
     let hue = Math.floor(random(minHue, maxHue + 1));
 
-    // Generate random saturation and lightness
-    let saturation = Math.random() * 100; // 0-100%
-    let lightness = Math.random() * 50 + 10; // 10-100%
+    let saturation = Math.random() * 100; 
+    let lightness = Math.random() * 50 + 10;
 
-    // Convert HSL values to RGB and return color object
+
     return color(`hsl(${hue}, ${saturation}%, ${lightness}%)`);
   }
 
