@@ -37,7 +37,7 @@ function draw() {
 
 class Stick {
   constructor(x, y) {
-    this.start = createVector(x, y); // Starting point of the crack
+    this.start = createVector(x, y); //līnijas sākumpunkts
     this.end = createVector(x + random(-100, 100), y + random(-100, 300));
   }
  
