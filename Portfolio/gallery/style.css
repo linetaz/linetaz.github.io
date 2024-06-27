@@ -15,11 +15,12 @@
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 250%;
     font-family: Marion-Italic, Marion;
     padding: 20px;
     text-align: center;
     font-style: italic;
+    color: #4D4E4E;
 }
 
 
@@ -32,13 +33,13 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-bottom: 50px;
         align-items: center;
     }
 
     .image-gallery img{
         max-width: 300px;
-        padding: 1rem;
+        padding: 10px;
     }
 
    
